@@ -1,0 +1,42 @@
+@import "variables";
+@import "../fonts/fontawesome/scss/fontawesome.scss";
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F2F2F2;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+
+            .icone_header {
+                padding: 10px;
+                color: black;
+                margin-left: 10px;
+            }
+
+            .logo_wrapper {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin-left: -25px;
+            }
+
+            .logo {
+                max-width: 130px;
+                width: 100%;
+            }
+}
+
+.photo_couverture {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+}
