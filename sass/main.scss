@@ -115,6 +115,12 @@ h1 {
         height: 80px;
         border-radius: 25px;
         box-shadow: 0px 6px 5px 0px rgba(204,204,204,1);
+            &:hover {
+                background-color: rgb(221, 219, 219);
+                .icone_gris {
+                    color: $primary;
+                }
+            }
     }
 
     .fonctionnement_nombre {
