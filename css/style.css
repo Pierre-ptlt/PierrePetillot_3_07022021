@@ -6314,6 +6314,30 @@ footer .footer_action .footer_text {
   margin-left: 10px;
 }
 
+@media only screen and (min-width: 800px) {
+  .fonctionnement .fonctionnement_wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .fonctionnement .fonctionnement_wrapper .fonctionnement_item {
+    max-width: 300px;
+  }
+
+  .restaurants .restaurants_wrapper {
+    flex-direction: row;
+    justify-content: center;
+    padding-left: -10%;
+  }
+  .restaurants .restaurants_item {
+    margin-left: 10%;
+    margin-bottom: 60px;
+  }
+
+  footer .footer_menu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .photo_couverture {
   display: flex;
   width: 100%;
