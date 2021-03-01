@@ -6150,6 +6150,8 @@ readers do not read off random characters that represent icons */
 }
 .menu .menu_item {
   padding-left: 10px;
+  display: flex;
+  flex-direction: column;
 }
 .menu .menu_item .menu_nom {
   padding-bottom: 5px;
@@ -6158,6 +6160,14 @@ readers do not read off random characters that represent icons */
 .menu .menu_item .menu_nom_texte {
   font-size: 21px;
   font-weight: lighter;
+}
+.menu .menu_item .menu_plat {
+  display: flex;
+  background-color: white;
+  border: none;
+  width: 98%;
+  max-width: 700px;
+  border-radius: 20px;
 }
 
 .btn_explorer {
