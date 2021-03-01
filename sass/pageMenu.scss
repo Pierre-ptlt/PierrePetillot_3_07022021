@@ -1,0 +1,53 @@
+@import "variables";
+@import "button";
+@import "header";
+@import "footer";
+@import "../fonts/fontawesome/scss/fontawesome.scss";
+
+.photo_couverture {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+}
+
+.menu {
+    position: absolute;
+    display: flex;
+    margin-top: -25px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    background-color: $light-grey;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+    .menu_title {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .restaurant_icone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nom_restaurant {
+        font-family: 'Shrikhand', cursive;
+        font-weight: 100;
+    }
+
+    .menu_item {
+        padding-left: 10px;
+
+        .menu_nom {
+            padding-bottom: 5px;
+            border-bottom: solid $tertiary;
+        }
+
+        .menu_nom_texte {
+            font-size: 21px;
+            font-weight: lighter;
+        }
+    }
+}
