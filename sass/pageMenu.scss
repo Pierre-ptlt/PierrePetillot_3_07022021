@@ -11,9 +11,10 @@
 }
 
 .menu {
-    position: absolute;
     display: flex;
+    position: absolute;
     margin-top: -25px;
+    padding-bottom: 50px;
     flex-direction: column;
     width: 100%;
     max-width: 700px;
@@ -40,11 +41,11 @@
     .menu_item {
         padding-left: 10px;
         display: flex;
+        margin-top: 30px;
         flex-direction: column;
 
         .menu_nom {
             padding-bottom: 5px;
-            border-bottom: solid $tertiary;
         }
 
         .menu_nom_texte {
@@ -52,13 +53,60 @@
             font-weight: lighter;
         }
 
+        .menu_barre {
+            margin-top: -10px;
+            height: 3px;
+            width: 40px;
+            background-color: $tertiary;
+        }
+
         .menu_plat {
             display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-top: 15px;
             background-color: white;
+            box-shadow: 1px 1px 4px #555;
             border: none;
             width: 98%;
             max-width: 700px;
+            padding: 0 10px;
             border-radius: 20px;
         }
+
+        .plat_texte {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+        }
+
+        .plat_nom {
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .plat_content {
+            font-weight: lighter;
+            font-size: 14px;
+            margin-top: -5px;
+        }
+
+        .plat_prix {
+            font-weight: bold;
+            font-size: 15px;
+            color: rgb(83, 83, 83);
+            margin-right: 15px;
+        }
+    }
+
+    .btn_wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .test {
+        background-color: aqua;
+        height: 50px;
     }
 }

@@ -6125,9 +6125,10 @@ readers do not read off random characters that represent icons */
 }
 
 .menu {
-  position: absolute;
   display: flex;
+  position: absolute;
   margin-top: -25px;
+  padding-bottom: 50px;
   flex-direction: column;
   width: 100%;
   max-width: 700px;
@@ -6151,23 +6152,63 @@ readers do not read off random characters that represent icons */
 .menu .menu_item {
   padding-left: 10px;
   display: flex;
+  margin-top: 30px;
   flex-direction: column;
 }
 .menu .menu_item .menu_nom {
   padding-bottom: 5px;
-  border-bottom: solid #99E2D0;
 }
 .menu .menu_item .menu_nom_texte {
   font-size: 21px;
   font-weight: lighter;
 }
+.menu .menu_item .menu_barre {
+  margin-top: -10px;
+  height: 3px;
+  width: 40px;
+  background-color: #99E2D0;
+}
 .menu .menu_item .menu_plat {
   display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 15px;
   background-color: white;
+  box-shadow: 1px 1px 4px #555;
   border: none;
   width: 98%;
   max-width: 700px;
+  padding: 0 10px;
   border-radius: 20px;
+}
+.menu .menu_item .plat_texte {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.menu .menu_item .plat_nom {
+  font-weight: bold;
+  font-size: 17px;
+}
+.menu .menu_item .plat_content {
+  font-weight: lighter;
+  font-size: 14px;
+  margin-top: -5px;
+}
+.menu .menu_item .plat_prix {
+  font-weight: bold;
+  font-size: 15px;
+  color: #535353;
+  margin-right: 15px;
+}
+.menu .btn_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.menu .test {
+  background-color: aqua;
+  height: 50px;
 }
 
 .btn_explorer {
