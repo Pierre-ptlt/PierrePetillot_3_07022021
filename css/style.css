@@ -12435,7 +12435,6 @@ h3 {
   align-items: center;
   flex-direction: column;
   padding-bottom: 50px;
-  margin: 0 15px;
 }
 .restaurants .restaurants_wrapper {
   display: flex;
@@ -12502,11 +12501,16 @@ h3 {
   .fonctionnement .fonctionnement_wrapper {
     flex-direction: row;
     justify-content: space-between;
+    margin-left: -30px;
   }
   .fonctionnement .fonctionnement_wrapper .fonctionnement_item {
     max-width: 300px;
+    margin-left: 30px;
   }
 
+  .restaurants {
+    margin: 0 15px;
+  }
   .restaurants .restaurants_wrapper {
     flex-direction: row;
     justify-content: center;
