@@ -30,29 +30,6 @@ h3 {
     color: black;
 }
 
-.header_resto {
-        display: flex;
-        align-items: center;
-
-            .icone_header {
-                padding: 10px;
-                color: black;
-                margin-left: 10px;
-            }
-
-            .logo_wrapper {
-                display: flex;
-                justify-content: center;
-                width: 100%;
-                margin-left: -25px;
-            }
-
-            .logo {
-                max-width: 130px;
-                width: 100%;
-            }
-}
-
 .intro {
     display: flex;
     flex-direction: column;

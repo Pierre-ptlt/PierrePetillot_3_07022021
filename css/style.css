@@ -16,6 +16,26 @@ header {
   padding: 20px 0px 10px 0px;
 }
 
+.header_resto {
+  display: flex;
+  align-items: center;
+}
+.header_resto .icone_header {
+  padding: 10px;
+  color: black;
+  margin-left: 10px;
+}
+.header_resto .logo_wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-left: -25px;
+}
+.header_resto .logo {
+  max-width: 130px;
+  width: 100%;
+}
+
 footer {
   background-color: #464545;
   display: flex;
@@ -52,6 +72,11 @@ footer .footer_action .footer_text {
   margin-left: 10px;
 }
 
+@media only screen and (min-width: 850px) {
+  .footer_resto {
+    margin: 0px 100px;
+  }
+}
 /*!
  * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -6118,15 +6143,25 @@ readers do not read off random characters that represent icons */
   width: auto;
 }
 
+.wrapper_all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .photo_couverture {
   display: flex;
   width: 100%;
   max-width: 700px;
+  max-height: 400px;
+}
+
+.cover_pic {
+  object-fit: cover;
 }
 
 .menu {
   display: flex;
-  position: absolute;
   margin-top: -25px;
   padding-bottom: 50px;
   flex-direction: column;
@@ -6228,6 +6263,26 @@ header {
   padding: 20px 0px 10px 0px;
 }
 
+.header_resto {
+  display: flex;
+  align-items: center;
+}
+.header_resto .icone_header {
+  padding: 10px;
+  color: black;
+  margin-left: 10px;
+}
+.header_resto .logo_wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-left: -25px;
+}
+.header_resto .logo {
+  max-width: 130px;
+  width: 100%;
+}
+
 footer {
   background-color: #464545;
   display: flex;
@@ -6264,6 +6319,11 @@ footer .footer_action .footer_text {
   margin-left: 10px;
 }
 
+@media only screen and (min-width: 850px) {
+  .footer_resto {
+    margin: 0px 100px;
+  }
+}
 /*!
  * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -12353,26 +12413,6 @@ h1 {
 
 h3 {
   color: black;
-}
-
-.header_resto {
-  display: flex;
-  align-items: center;
-}
-.header_resto .icone_header {
-  padding: 10px;
-  color: black;
-  margin-left: 10px;
-}
-.header_resto .logo_wrapper {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-left: -25px;
-}
-.header_resto .logo {
-  max-width: 130px;
-  width: 100%;
 }
 
 .intro {
