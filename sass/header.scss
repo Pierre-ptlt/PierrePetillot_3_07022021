@@ -1,14 +1,21 @@
 header {
     display: flex;
     justify-content: center;
-    padding: 20px 0px 10px 0px;
+    max-width: 700px;
+    height: 50px;
+    margin: auto;
+    padding-top: 15px;
 }
 
 .header_resto {
     display: flex;
     align-items: center;
+    padding-top: 15px;
+    position: relative;
 
         .icone_header {
+            position: absolute;
+            left: 0;
             padding: 10px;
             color: black;
             margin-left: 10px;
@@ -17,8 +24,6 @@ header {
         .logo_wrapper {
             display: flex;
             justify-content: center;
-            width: 100%;
-            margin-left: -25px;
         }
 
         .logo {
