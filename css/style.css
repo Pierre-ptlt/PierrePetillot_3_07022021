@@ -1,34 +1,22 @@
 @charset "UTF-8";
-@keyframes fadein {
+@keyframes plat-appearance {
   from {
     opacity: 0;
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
+    transform: translateY(0px);
   }
 }
-@-webkit-keyframes fadein {
+@keyframes plat-appearance {
   from {
     opacity: 0;
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
-  }
-}
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+    transform: translateY(0px);
   }
 }
 .btn_explorer {
@@ -6254,7 +6242,26 @@ readers do not read off random characters that represent icons */
   padding: 0 10px;
   border-radius: 20px;
   cursor: pointer;
-  animation: fadeup 1s;
+  animation-name: plat-appearance;
+  animation-duration: 500ms;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+  animation-play-state: running;
+}
+.menu .menu_item .plat_normal {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.menu .menu_item .plat_hover {
+  display: none;
+  transition: transform 400ms;
+}
+.menu .menu_item .plat_hover:hover {
+  display: block;
+  background-color: #99E2D0;
+  width: 50px;
 }
 .menu .menu_item .plat_texte {
   display: flex;
@@ -6269,10 +6276,15 @@ readers do not read off random characters that represent icons */
   font-weight: lighter;
   font-size: 14px;
   margin-top: -5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100%-50px);
 }
 .menu .menu_item .plat_prix {
   font-weight: bold;
   font-size: 15px;
+  padding-top: 30px;
   color: #535353;
   margin-right: 15px;
 }
@@ -6284,6 +6296,42 @@ readers do not read off random characters that represent icons */
 .menu .test {
   background-color: aqua;
   height: 50px;
+}
+
+.animation-1 {
+  animation-delay: 0s;
+}
+
+.animation-2 {
+  animation-delay: 0.2s;
+}
+
+.animation-3 {
+  animation-delay: 0.4s;
+}
+
+.animation-4 {
+  animation-delay: 0.6s;
+}
+
+.animation-5 {
+  animation-delay: 0.8s;
+}
+
+.animation-6 {
+  animation-delay: 1s;
+}
+
+.animation-7 {
+  animation-delay: 1.2s;
+}
+
+.animation-8 {
+  animation-delay: 1.4s;
+}
+
+.animation-9 {
+  animation-delay: 1.6s;
 }
 
 .btn_explorer {
@@ -12490,6 +12538,10 @@ h3 {
 
 .icone_gris {
   color: #6e6d6d;
+  transition: transform 400ms ease-in-out;
+}
+.icone_gris:hover {
+  background: linear-gradient(180deg, #9356DC, 70%, #FF79DA);
 }
 
 .icone_blanc {
@@ -12547,6 +12599,7 @@ h3 {
   font-weight: bold;
   font-size: 17px;
   margin-left: 20px;
+  margin-right: 10px;
 }
 
 .restaurants {
