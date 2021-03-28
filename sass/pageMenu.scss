@@ -76,13 +76,14 @@
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
+            overflow: hidden;
             margin-top: 15px;
             background-color: white;
             box-shadow: 1px 1px 4px #555;
             border: none;
             width: 98%;
             max-width: 700px;
-            padding: 0 10px;
+            padding: 0px 0px 0px 10px;
             border-radius: 20px;
             cursor: pointer;
             animation-name: plat-appearance;
@@ -91,6 +92,19 @@
             animation-direction: normal;
             animation-fill-mode: backwards;
             animation-play-state: running;
+            &:hover {
+                padding-right: 0px;
+                .plat_hover {
+                    width: 100px;
+                }
+
+                .icone_spin {
+                    animation: icone_spin 700ms ease-in-out;
+                }
+                .plat_normal {
+                    width: calc(100% - 100px);
+                }
+            }
 
         }
 
@@ -99,16 +113,22 @@
             display: flex;
             justify-content: space-between;
             width: 100%;
+            transition: width 700ms ease-in-out;
         }
 
         .plat_hover {
-            display: none;
-            transition: transform 400ms;
-            &:hover {
-                display: block;
-                background-color: $tertiary;
-                width: 50px;
-            }
+            width: 0px;
+            height: 80px;
+            background: $tertiary;
+            transition: width 700ms ease-in-out;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icone_spin {
+            color: white;
         }
 
         .plat_texte {
@@ -120,6 +140,10 @@
         .plat_nom {
             font-weight: bold;
             font-size: 17px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: calc(100%-30px);
         }
 
         .plat_content {
@@ -129,7 +153,7 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            max-width: calc(100%-50px);
+            max-width: calc(100%-30px);
         }
 
         .plat_prix {
@@ -162,3 +186,4 @@
 .animation-7 {animation-delay: 1.2s;}
 .animation-8 {animation-delay: 1.4s;}
 .animation-9 {animation-delay: 1.6s;}
+.animation-10 {animation-delay: 1.8s;}
