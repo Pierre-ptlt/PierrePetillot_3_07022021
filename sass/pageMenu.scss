@@ -102,7 +102,7 @@
                     animation: icone_spin 700ms ease-in-out;
                 }
                 .plat_normal {
-                    width: calc(100% - 100px);
+                    width: calc(100% - 125px);
                 }
             }
 
@@ -135,6 +135,7 @@
             display: flex;
             flex-direction: column;
             align-items: baseline;
+            width: calc(100% - 25px);
         }
 
         .plat_nom {
@@ -143,7 +144,7 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            max-width: calc(100%-30px);
+            max-width: calc(100% - 30px);
         }
 
         .plat_content {
@@ -153,7 +154,7 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            max-width: calc(100%-30px);
+            max-width: calc(100% - 30px);
         }
 
         .plat_prix {

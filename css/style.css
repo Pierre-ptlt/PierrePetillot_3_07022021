@@ -11,21 +11,25 @@
 }
 @keyframes coeur {
   0% {
-    transform: scale(1);
+    transform: scale(0);
+    opacity: 0;
   }
   75% {
     transform: scale(1.3);
   }
   100% {
     transform: scale(1);
+    opacity: 1;
   }
 }
 @keyframes icone_spin {
   0% {
     transform: rotate(0deg);
+    opacity: 0;
   }
   100% {
     transform: rotate(360deg);
+    opacity: 1;
   }
 }
 @keyframes plat-appearance {
@@ -40,21 +44,25 @@
 }
 @keyframes coeur {
   0% {
-    transform: scale(1);
+    transform: scale(0);
+    opacity: 0;
   }
   75% {
     transform: scale(1.3);
   }
   100% {
     transform: scale(1);
+    opacity: 1;
   }
 }
 @keyframes icone_spin {
   0% {
     transform: rotate(0deg);
+    opacity: 0;
   }
   100% {
     transform: rotate(360deg);
+    opacity: 1;
   }
 }
 .btn_explorer {
@@ -6298,7 +6306,7 @@ readers do not read off random characters that represent icons */
   animation: icone_spin 700ms ease-in-out;
 }
 .menu .menu_item .menu_plat:hover .plat_normal {
-  width: calc(100% - 100px);
+  width: calc(100% - 125px);
 }
 .menu .menu_item .plat_normal {
   display: flex;
@@ -6323,6 +6331,7 @@ readers do not read off random characters that represent icons */
   display: flex;
   flex-direction: column;
   align-items: baseline;
+  width: calc(100% - 25px);
 }
 .menu .menu_item .plat_nom {
   font-weight: bold;
@@ -6330,7 +6339,7 @@ readers do not read off random characters that represent icons */
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: calc(100%-30px);
+  max-width: calc(100% - 30px);
 }
 .menu .menu_item .plat_content {
   font-weight: lighter;
@@ -6339,7 +6348,7 @@ readers do not read off random characters that represent icons */
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: calc(100%-30px);
+  max-width: calc(100% - 30px);
 }
 .menu .menu_item .plat_prix {
   font-weight: bold;
