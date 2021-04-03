@@ -1,5 +1,6 @@
 @import "variables";
 @import "animations";
+@import "loader";
 @import "pageMenu";
 @import "button";
 @import "header";
@@ -23,6 +24,10 @@ h1 {
 
 h3 {
     color: black;
+}
+
+.contenu {
+    animation: contenu 3100ms;
 }
 
 .intro {
