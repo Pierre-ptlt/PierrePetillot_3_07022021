@@ -12898,7 +12898,6 @@ h3 {
   .restaurants .restaurants_wrapper {
     flex-direction: row;
     justify-content: center;
-    padding-left: -10px;
   }
 
   footer .footer_menu {
