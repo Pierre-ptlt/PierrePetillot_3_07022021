@@ -22,6 +22,35 @@
     object-fit: cover;
 }
 
+.icone_couleur {
+    background: linear-gradient(180deg,$primary,70%,$secondary);
+    color: transparent;
+    background-clip: unset;
+    -webkit-background-clip: text ;
+    opacity: 0;
+}
+
+.icone_fav {
+    position: absolute;
+    right: 0;
+}
+
+.restaurants_icone {
+    position: relative;
+    display: flex;
+    align-items: center;
+    &:hover {
+        .icone_gris {
+            opacity: 0;
+        }
+
+        .icone_couleur {
+            opacity: 1;
+            animation: coeur 300ms;
+        }
+    }
+}
+
 .menu {
     display: flex;
     margin-top: -25px;
